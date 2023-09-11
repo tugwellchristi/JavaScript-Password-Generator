@@ -25,3 +25,6 @@ To help ensure I have considered all aspects of generating a password with great
 
 ## Resources
 Starter code provided from: https://github.com/coding-boot-camp/friendly-parakeet
+
+Provided image reference: 
+![Generator_Reference](https://github.com/tugwellchristi/JavaScript-Password-Generator/assets/90078824/744929fe-f529-4ce4-8293-f022a3442090)

@@ -14,7 +14,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #b8d3ed;
 }
 
 .wrapper {
@@ -46,12 +46,13 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background:  #b8d3ed;
   height: 2px;
 }
 
 .card-body {
   min-height: 100px;
+  
 }
 
 .card-footer {
@@ -62,7 +63,7 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background:  #b8d3ed;
   height: 2px;
 }
 
@@ -112,7 +113,7 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 2px dashed #5e84b0;
   border-radius: 6px;
   resize: none;
   overflow: hidden;

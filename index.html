@@ -21,19 +21,19 @@
             readonly
             id="password"
             placeholder="Your Secure Password"
-            aria-label="Generated Password" >
+            aria-label="Generated Password">
           </textarea>
           <!--When asked for character types to include in the password, I confirm whether or not to include lowercase, 
               uppercase, numeric, and/or special characters.-->
             <div id="settings">
-              <label for="numbers">Include Numbers</label>
+              <label for="numbers">Include:  Numbers</label>
               <input type="checkbox" id="numbers" unchecked />
-              <label for="symbols">Include Special Characters</label>
+              <label for="symbols"> Special Characters</label>
               <input type="checkbox" id="symbols" unchecked />
-              <br />
-              <label for="lowercase">Include Lowercase Letters</label>
+          
+              <label for="lowercase">Lowercase Letters</label>
               <input type="checkbox" id="symbols" unchecked />
-              <label for="uppercase">Include Uppercase Letters</label>
+              <label for="uppercase"> Uppercase Letters</label>
               <input type="checkbox" id="symbols" unchecked />
               <br />
               <label for="length">Length</label>
@@ -43,10 +43,13 @@
           </div>
         </div>
         <div class="card-footer">
-          <button id="generate" class="btn">Generate Password </button>
+          <button onclick="writePassword();" 
+            id="generate" 
+            class="btn" >Generate Password </button>
         </div>
       </div>
     </div>
     <script src="script.js"></script>
+    
   </body>
 </html>

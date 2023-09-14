@@ -28,5 +28,7 @@ Starter code provided from: https://github.com/coding-boot-camp/friendly-parakee
 
 Reference: https://w3collective.com/random-password-generator-javascript/
 
+Tutorial Reference: https://www.youtube.com/watch?v=Xrsb9SiF3a8
+
 Provided image reference: 
 ![Generator_Reference](https://github.com/tugwellchristi/JavaScript-Password-Generator/assets/90078824/744929fe-f529-4ce4-8293-f022a3442090)

@@ -11,32 +11,32 @@
 // Get references to the #generate element
 //var generateBtn = document.querySelector("#generate");
 
-var password = document.getElementById("password");
-var length = 15;
-var lowerCase = "abcdefghijklmnopqrstuvwxyz";
-var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var number = "0123456789";
-var symbol = "~!@#$%^&*";
+const passwordBox = document.getElementById("password");
+const length = 8;
+const lowerCase = "abcdefghijklmnopqrstuvwxyz";
+const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const number = "0123456789";
+const symbol = "~!@#$%^&*";
 
-var allChars = upperCase + lowerCase + number + symbol;
+const allChars = upperCase + lowerCase + number + symbol;
 
 // Write password to the #password input
 function writePassword() {
-  var password = "";
+  let password = " ";
   password += upperCase[Math.floor(Math.random() * upperCase.length)];
   password += lowerCase[Math.floor(Math.random() * lowerCase.length)];
   password += number[Math.floor(Math.random() * number.length)];
   password += symbol[Math.floor(Math.random() * symbol.length)];
-  
- // passwordText.value = password;
-  while(length > password.length) {
+
+  // passwordText.value = password;
+  while (length > password.length) {
     password += allChars[Math.floor(Math.random() * allChars.length)];
   }
-  password.valueOf = password;
+  passwordBox.value = password;
 }
 
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-writePassword();
+

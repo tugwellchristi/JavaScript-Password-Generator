@@ -6,16 +6,16 @@ This project contains a password generator created using HTML, CSS and will func
 ## User Story
 As an employee or user with access to sensitive data, I want to randomly generate a password that meets certain criteria so that I can create a strong password that provides greater security.
 
-## Acceptance Criteria
+## Project Criteria
 To help ensure I have considered all aspects of generating a password with greater security, I've made sure that the following criteria have been met: 
 
-1. When clicking the button to generate a password, I am presented with a series of prompts for password criteria. 
-2. When prompted for password criteria, I select which criteria to include in the password. 
-3. When prompted for the length of the password, I choose a length of at least 8 characters and no more than 128 characters.
-4. When asked for character types to include in the password, I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters. 
-5. When I answer each prompt, my input should be validated and at least one character type should be selected. 
-6. When all prompts are answered, a password is generated that matches the selected criteria. 
-7. When the password is generated, the password is either displayed in an alert or written to the page. 
+- When clicking the button to generate a password, I am presented with a series of prompts for password criteria. 
+- When prompted for password criteria, I select which criteria to include in the password. 
+- When prompted for the length of the password, I choose a length of at least 8 characters and no more than 128 characters.
+- When asked for character types to include in the password, I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters. 
+- When I answer each prompt, my input should be validated and at least one character type should be selected. 
+- When all prompts are answered, a password is generated that matches the selected criteria. 
+- When the password is generated, the password is either displayed in an alert or written to the page. 
 
 ## Deployed Link
 (Placeholder)
@@ -23,7 +23,7 @@ To help ensure I have considered all aspects of generating a password with great
 ## Screenshots from Deployed Link
 (Placeholder)
 
-## Resources
+## Resources Used
 Starter code provided from: https://github.com/coding-boot-camp/friendly-parakeet
 
 Reference: https://w3collective.com/random-password-generator-javascript/

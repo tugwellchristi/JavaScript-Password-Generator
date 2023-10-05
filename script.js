@@ -1,42 +1,64 @@
-// Assignment code here
-// 1. When clicking the button to generate a password, I am presented with a series of prompts for password criteria. 
-// 2. When prompted for password criteria, I select which criteria to include in the password. 
-// 3. When prompted for the length of the password, I choose a length of at least 8 characters and no more than 128 characters. 
-// 5. When I answer each prompt, my input should be validated and at least one character type should be selected. 
-// 6. When all prompts are answered, a password is generated that matches the selected criteria. 
-// 7. When the password is generated, the password is either displayed in an alert or written to the page. 
 
+// DOM elements
+const result = document.getElementById("password");
+const upperCaseEl = document.querySelector("uppercase");
+const lowerCaseEl = document.querySelector("lowercase");
+const numberEl = document.querySelector("number");
+const symbolEl = document.querySelector("symbol");
+const lengthEl = document.querySelector("length");
+const generateBtn = document.getElementById("generate");
+const checkbox = document.getElementById("checkbox");
 
-
-// Get references to the #generate element
-//var generateBtn = document.querySelector("#generate");
-
-const passwordBox = document.getElementById("password");
-const length = 8;
+// Global string variables
 const lowerCase = "abcdefghijklmnopqrstuvwxyz";
 const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const number = "0123456789";
 const symbol = "~!@#$%^&*";
+const length = 8;
 
+// Variable containing all string variables
 const allChars = upperCase + lowerCase + number + symbol;
 
-// Write password to the #password input
+// Functions used
 function writePassword() {
   let password = " ";
+
+  // Generates random selections based on the above strings
   password += upperCase[Math.floor(Math.random() * upperCase.length)];
   password += lowerCase[Math.floor(Math.random() * lowerCase.length)];
   password += number[Math.floor(Math.random() * number.length)];
   password += symbol[Math.floor(Math.random() * symbol.length)];
-
-  // passwordText.value = password;
+  
   while (length > password.length) {
     password += allChars[Math.floor(Math.random() * allChars.length)];
   }
-  passwordBox.value = password;
+  result.value = password;
 }
 
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", writePassword); 
 
+
+
+// // Get the checkbox element
+// const checkbox = document.getElementById("myCheckbox");
+
+// // Get the string content
+// const stringContent = "This is the content to be added.";
+
+// // Attach a click event listener to the checkbox
+// checkbox.addEventListener("click", function() {
+//   // Get the element where you want to insert the content
+//   const targetElement = document.getElementById("targetElement");
+
+//   // Check if the checkbox is checked
+//   if (checkbox.checked) {
+//     // Insert the content into the desired location in the DOM
+//     targetElement.textContent = stringContent;
+//   } else {
+//     // Clear the content if the checkbox is unchecked
+//     targetElement.textContent = "";
+//   }
+// });
 

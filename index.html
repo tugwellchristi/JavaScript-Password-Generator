@@ -5,10 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Title -->
   <title>Password Generator</title>
+  <!-- Script -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
+<!-- Form criteria including uppercase and lowercase letters, numbers and symbols -->
 <body>
   <div class="wrapper">
     <header>
@@ -21,40 +25,42 @@
       <div id="settings">
         <div class="setting">
           <label for="numbers"><br> Numbers</label>
-          <input type="checkbox" id="numbers  " checked />
+          <input type="checkbox" id="numbers" unchecked />
         </div>
         <div class="setting">
           <label for="symbols"> Special Characters</label>
-          <input type="checkbox" id="symbols  " checked />
+          <input type="checkbox" id="symbols" unchecked />
         </div>
         <div class="setting">
           <label for="lowercase">Lowercase Letters</label>
-          <input type="checkbox" id="symbols  " checked />
+          <input type="checkbox" id="symbols" unchecked />
         </div>
         <div class="setting">
           <label for="uppercase"> Uppercase Letters</label>
-          <input type="checkbox" id="symbols  " checked />
+          <input type="checkbox" id="symbols" unchecked />
         </div>
+
+<!-- Select password length, between 8-25 characters (I opted for a smaller range than 8-128)-->
         <div class="setting">
           <label for="length">Length</label>
-          <input type="number" id="length" value=" " min="8" max="25" />
+          <input type="number" id="length" value=" " min= "8" max="25" />
         </div>
         <p> * Passwords must be between 8 - 25 characters </p>
       </div>
       <div class="card-body">
-        <textarea readonly id="password" placeholder="passwordBox" aria-label="Generated Password">
+        <!--Space that will display the password when desired criteria has been selected-->
+        <textarea readonly id="password" placeholder="result" aria-label="Generated Password">
           </textarea>
         <!--When asked for character types to include in the password, I confirm whether or not to include lowercase, 
               uppercase, numeric, and/or special characters.-->
 
       </div>
+      <!-- Once button is pressed, password is generated and displayed, matching desired criteria-->
       <div class="card-footer">
-        <button class="btn" id="generate" onclick="writePassword()">Generate Password </button>
+        <button class="btn" id="generate">Generate Password </button>
       </div>
     </div>
   </div>
   <script src="script.js"></script>
-
 </body>
-
 </html>

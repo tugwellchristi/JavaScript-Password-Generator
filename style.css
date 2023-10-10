@@ -56,7 +56,7 @@ header {
 }
 
 .card-body {
-  min-height: 100px;
+  min-height: 75px;
   
 }
 
@@ -69,13 +69,14 @@ header {
   display: block;
   width: 100%;
   background:  #1e609e;
-  height: 2px;
+  height: 3px;
 }
 
 .card-footer::after {
   content: " ";
   display: block;
   clear: both;
+  
 }
 
 .setting {
@@ -118,11 +119,11 @@ button[disabled] {
   padding-top: 20px;
   padding-left: 5px;
   padding-right: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
   font-size: 26px;
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   border: 2px dashed #5e84b0;
   border-radius: 6px;
   resize: none;

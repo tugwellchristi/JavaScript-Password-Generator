@@ -25,32 +25,32 @@
       <div id="settings">
         <div class="setting">
           <label for="numbers"><br> Numbers</label>
-          <input type="checkbox" id="numbers" unchecked />
+          <input type="checkbox" id="number" checked />
         </div>
         <div class="setting">
           <label for="symbols"> Special Characters</label>
-          <input type="checkbox" id="symbols" unchecked />
+          <input type="checkbox" id="symbol" checked />
         </div>
         <div class="setting">
           <label for="lowercase">Lowercase Letters</label>
-          <input type="checkbox" id="symbols" unchecked />
+          <input type="checkbox" id="lowercase" checked />
         </div>
         <div class="setting">
           <label for="uppercase"> Uppercase Letters</label>
-          <input type="checkbox" id="symbols" unchecked />
+          <input type="checkbox" id="uppercase" checked />
         </div>
 
-<!-- Select password length, between 8-25 characters (I opted for a smaller range than 8-128)-->
+<!-- Allows user to select password length, between 8-25 characters (I opted for a smaller range than 8-128)-->
         <div class="setting">
           <label for="length">Length</label>
-          <input type="number" id="length" value=" " min= "8" max="25" />
+          <input type="number" id="length" value="8" min= "8" max="25" />
         </div>
         <p> * Passwords must be between 8 - 25 characters </p>
       </div>
       <div class="card-body">
-        <!--Space that will display the password when desired criteria has been selected-->
-        <textarea readonly id="password" placeholder="result" aria-label="Generated Password">
-          </textarea>
+        <!--Space that will display the password when desired criteria has been selected and will show Generated Password as a placeholder-->
+        <input type="text" readonly id="password" placeholder="Generated Password" aria-label="Generated Password"
+          />
         <!--When asked for character types to include in the password, I confirm whether or not to include lowercase, 
               uppercase, numeric, and/or special characters.-->
 

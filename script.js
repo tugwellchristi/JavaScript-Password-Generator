@@ -47,6 +47,7 @@ function writePassword() {
     chars += " ";
   }
 
+  // Alert will be issued if the user does not select any of the checkboxes
   if (!document.querySelector('input[type="checkbox"]:checked')) {
     alert("Please select at least one of the following criteria to create your unique password!")
   }

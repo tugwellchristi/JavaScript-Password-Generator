@@ -47,6 +47,9 @@ function writePassword() {
     chars += " ";
   }
 
+  if (!document.querySelector('input[type="checkbox"]:checked')) {
+    alert("Please select at least one of the following criteria to create your unique password!")
+  }
   // For loop increments based on desired length and math random helps generate a number, math floor rounding the decimal place down
   // This will then identify which number in the character strings that will display in the result window based on the users selection criteria
   for (let i = 0; i <= length; i++) {

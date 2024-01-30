@@ -26,8 +26,8 @@ function writePassword() {
   if (symbolEl.checked) chars += symbolChars;
 
   // Alert if no checkboxes are checked or length is invalid
-  if (!chars || length < 8 || length > 128) {
-    alert("Please select at least one criteria and ensure the length is between 8 and 128 characters.");
+  if (!chars || length < 8 || length > 25) {
+    alert("Please select at least one criteria and ensure the length is between 8 and 25 characters.");
     return;
   }
 

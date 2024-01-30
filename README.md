@@ -16,7 +16,7 @@ To help ensure I have considered all aspects of generating a strong password, I'
 - Upon clicking the generate password button again, I receive a new password. 
 
 ## Deployed Link
-Depoloyed link: https://tugwellchristi.github.io/JavaScript-Password-Generator/
+Depoloyed [link:](https://hulking-carnelian-oyster.glitch.me/)
 
 ## Screenshots from Deployed Link
 ![Screen Shot 2023-10-10 at 4 51 47 PM](https://github.com/tugwellchristi/JavaScript-Password-Generator/assets/90078824/082211dd-bb16-42e0-a572-ede79dc7b209)

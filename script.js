@@ -1,4 +1,3 @@
-
 // DOM elements
 const result = document.querySelector("#password");
 const upperCaseEl = document.querySelector("#uppercase");
@@ -9,10 +8,10 @@ const lengthEl = document.querySelector("#length");
 const generateBtn = document.getElementById("generate");
 
 // Global string variables
-const lowerCase = "abcdefghijklmnopqrstuvwxyz";
-const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const number = "0123456789";
-const symbol = "~!@#$%^&*";
+const lowerCaseChars = "abcdefghijklmnopqrstuvwxyz";
+const upperCaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const numberChars = "0123456789";
+const symbolChars = "~!@#$%^&*";
 
 // Function used to generate the password
 function writePassword() {
@@ -20,29 +19,27 @@ function writePassword() {
   let length = parseInt(lengthEl.value);
   let chars = "";
 
-  // If an element is checked, it pulls from its named string of characters. If not checked, it does not display any characters
-  if (upperCaseEl.checked) chars += upperCase;
-  if (lowerCaseEl.checked) chars += lowerCase;
-  if (numberEl.checked) chars += number;
-  if (symbolEl.checked) chars += symbol;
- 
-  // Alert will be issued if the user does not select any of the checkboxes
+  // Check which character sets to include based on user selection
+  if (upperCaseEl.checked) chars += upperCaseChars;
+  if (lowerCaseEl.checked) chars += lowerCaseChars;
+  if (numberEl.checked) chars += numberChars;
+  if (symbolEl.checked) chars += symbolChars;
+
+  // Alert if no checkboxes are checked or length is invalid
   if (!chars || length < 8 || length > 128) {
-    alert("Please select at least one of the following criteria to create your unique password!");
+    alert("Please select at least one criteria and ensure the length is between 8 and 128 characters.");
     return;
   }
-  // For loop increments based on desired length and math random helps generate a number, math floor rounding the decimal place down
-  // This will then identify which number in the character strings that will display in the result window based on the users selection criteria
+
+  // For loop increments based on desired length
   for (let i = 0; i < length; i++) {
     let rand = Math.floor(Math.random() * chars.length);
     password += chars[rand];
   }
+
+  // Display the generated password
   result.value = password;
 }
 
 // Added event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-
-
-
